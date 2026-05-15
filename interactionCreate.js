@@ -15,8 +15,8 @@ const {
 const fs = require("fs");
 const path = require("path");
 
-const notrufDbPath = path.join(__dirname, "../database/notrufSetups.json");
-const verifyDbPath = path.join(__dirname, "../database/verifySetups.json");
+const notrufDbPath = path.join(__dirname, "notrufSetups.json");
+const verifyDbPath = path.join(__dirname, "verifySetups.json");
 
 function saveDb(db, dbPath) {
   fs.writeFileSync(dbPath, JSON.stringify(db, null, 2));
